@@ -2,17 +2,17 @@ import uuid from 'uuid';
 
 export const addLabel = (
 	{	
-		addedLabels='',
-		startTime=0,
-		endTime=0,
+		title='',
+		start=0,
+		end=0,
 	}={}
 ) =>({
 	type:'ADD_LABEL',
 	label:{
 		id:uuid(),
-		addedLabels,
-		startTime,
-		endTime,
+		title,
+		start,
+		end,
 	}
 });
 
