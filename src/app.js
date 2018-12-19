@@ -22,7 +22,7 @@ const AppRouter =()=> (
 
 const store  = configureStore();
 const unsubscribe = store.subscribe(()=>{
-	console.log(store.getState())
+	console.log(store.getState()+"dfdfd");
 });
 const jsx = (
 	<Provider store={store}>
